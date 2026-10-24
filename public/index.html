@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World！— cxj 的第一个 AI 网站</title>
+  <meta name="description" content="Hello World！我是 cxj，这是我的第一个 AI 开发的网站。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%8B%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <main class="card">
+    <p class="badge">
+      <span class="dot" aria-hidden="true"></span>
+      Node.js · 已成功运行
+    </p>
+
+    <h1 class="title">Hello World！</h1>
+
+    <p class="subtitle">
+      我是<span class="name">【cxj】</span>，我的第一个 AI 开发的网站
+    </p>
+
+    <!-- 服务器时间 -->
+    <section class="clock" aria-live="polite">
+      <p class="clock__label">
+        <svg class="clock__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3.5 2" />
+        </svg>
+        当前服务器时间
+      </p>
+
+      <p class="clock__time" id="clock-time">--:--:--</p>
+      <p class="clock__date" id="clock-date">正在获取服务器时间…</p>
+
+      <div class="clock__meta">
+        <span id="clock-timezone">时区 —</span>
+        <span class="clock__status" id="clock-status">
+          <i class="dot dot--small" aria-hidden="true"></i>
+          每秒与服务器同步
+        </span>
+      </div>
+    </section>
+
+    <ul class="tags">
+      <li>零依赖</li>
+      <li>原生 HTTP 模块</li>
+      <li>REST 接口 /api/time</li>
+    </ul>
+
+    <footer class="footer">
+      由 <strong>WorkBuddy</strong> 与 <strong>cxj</strong> 一起打造 · 2026
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
